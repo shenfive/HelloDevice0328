@@ -20,8 +20,8 @@ class ViewController: UIViewController {
 //            myImage.image = theImage
 //        }
         
-        myImage.image = UIImage.init(named: "applelogo")
-        
+        myImage.image = UIImage(named: "applelogo")
+        self.view.backgroundColor = UIColor(named: "mainBG")
     }
     
     
