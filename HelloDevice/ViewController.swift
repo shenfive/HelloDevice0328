@@ -10,11 +10,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    @IBOutlet weak var myImage: UIImageView!
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        if let path = Bundle.main.path(forResource: "applelogo", ofType: "png"){
+            let theImage = UIImage.init(contentsOfFile: path)
+            myImage.image = theImage
+        }
+        
+        
+        
     }
-
-
+    
+    
 }
 
