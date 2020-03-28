@@ -15,12 +15,12 @@ class ViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        if let path = Bundle.main.path(forResource: "applelogo", ofType: "png"){
-            let theImage = UIImage.init(contentsOfFile: path)
-            myImage.image = theImage
-        }
+//        if let path = Bundle.main.path(forResource: "applelogo", ofType: "png"){
+//            let theImage = UIImage.init(contentsOfFile: path)
+//            myImage.image = theImage
+//        }
         
-        
+        myImage.image = UIImage.init(named: "applelogo")
         
     }
     
